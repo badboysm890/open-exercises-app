@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Exercises</title>
+  <link rel="stylesheet" href="app/style.css">
+  <script src="app/lottie.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Exercises</h1>
+    <span class="tagline" id="count"></span>
+    <div class="search-wrap">
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M12.7 13.9a7.5 7.5 0 1 1 1.2-1.2l4.2 4.2-1.2 1.2-4.2-4.2zm-1.2 1a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"/>
+      </svg>
+      <input id="search" type="search" placeholder="Search" autocomplete="off" spellcheck="false" aria-label="Search exercises">
+    </div>
+  </header>
+
+  <main>
+    <div id="grid" class="grid" aria-label="Exercise list"></div>
+  </main>
+
+  <div id="sheet-backdrop" class="sheet-backdrop"></div>
+  <section id="sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <div class="grabber"></div>
+    <button id="sheet-close" class="sheet-close" type="button" aria-label="Close">✕</button>
+    <div id="sheet-stage" class="sheet-stage"></div>
+    <h2 id="sheet-title" class="sheet-title"></h2>
+    <p id="sheet-skin" class="sheet-skin"></p>
+    <div id="sheet-instructions" class="sheet-instructions-container"></div>
+    <p id="sheet-note" class="sheet-note"></p>
+  </section>
+
+  <script src="app/app.js"></script>
+</body>
+</html>
